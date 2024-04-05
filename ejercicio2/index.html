@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body class="flex justify-center items-center flex-col h-screen gap-y-11 bg-gradient-to-r from-[purple] to-[pink] ">
+    <h1 class="text-3xl" id="contador">0</h1>
+    <div>
+        <button class="w-24 bg-slate-500 border border-solid border-teal-900 rounded-md text-white"
+            onclick="actualizarContador(1)">+1</button>
+        <button class="w-24 bg-slate-500 border border-solid border-teal-900 rounded-md text-white"
+            onclick="actualizarContador(-1)">-1</button>
+        <button class="w-24 bg-slate-500 border border-solid border-teal-900 rounded-md text-white"
+            onclick="actualizarContador(-5)">-5</button>
+        <button class="w-24 bg-slate-500 border border-solid border-teal-900 rounded-md text-white"
+            onclick="actualizarContador(5)">+5</button>
+        <button class="w-24 bg-slate-500 border border-solid border-teal-900 rounded-md text-white"
+            onclick="actualizarContador(-10)">-10</button>
+        <button class="w-24 bg-slate-500 border border-solid border-teal-900 rounded-md text-white"
+            onclick="actualizarContador(10)">+10</button>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

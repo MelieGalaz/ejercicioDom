@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body class="flex justify-center items-center h-screen bg-purple-100">
+    <!-- adivinanza
+Crear un documento html con una adivinanza (o una pregunta) y 3 botones con posibles respuestas. Si se clickea la
+respuesta correcta, se debe mostrar en el documento un texto que lo indique (por ejemplo: ¡Correcto!) debajo de la
+adivinanza, y el botón seleccionado debe ponerse con un color de fondo verde. Si se clickea una respuesta incorrecta, se
+debe mostrar en el documento un texto que lo indique (por ejemplo: ¡Le erraste!) y mostrar el botón con la respuesta
+correcta con un color de fondo verde y los otros dos con un color de fondo rojo. -->
+    <div class="flex flex-col  items-center gap-y-5">
+        <h1 class=" text-3xl">Adivinanza</h1>
+        <p class="text-2xl">Una señorita muy señoreada, lleva sombrero verde y blusa colorada.</p>
+        <div class="flex gap-2.5">
+            <button id="boton1"
+                class="w-24 bg-slate-500 border border-solid border-teal-900 rounded-md text-white">Frutilla</button>
+            <button id="boton2"
+                class="w-24 bg-slate-500 border border-solid border-teal-900 rounded-md text-white">Manzana</button>
+            <button id="boton3"
+                class="w-24 bg-slate-500 border border-solid border-teal-900 rounded-md text-white">Frambuesa</button>
+        </div>
+        <p class="hidden text-6xl font-bold text-green-500" id="respuestaCorrecta">Correcto!!!!</p>
+        <p class="hidden text-6xl font-bold text-red-500" id="respuestaIncorrecta">¡Le erraste!</p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
